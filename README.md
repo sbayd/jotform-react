@@ -8,6 +8,18 @@ You can create great & flexible forms with [JotForm.com](https://www.jotform.com
 You can use any form fields from JotForm's 300+ field base in your embedded form even advanced fields like signature, take photo, pdf embed.
 
 It supports multiple forms / auto-resize or submit callbacks.
+### Installation
+
+#### With YARN
+```
+yarn add jotform-react
+```
+
+#### With NPM
+
+```
+npm install jotform-react
+```
 
 ### Simple Usage
 ```JSX
