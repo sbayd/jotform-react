@@ -1,0 +1,4 @@
+{
+  "extends": "jotform",
+  "parser": "babel-eslint"
+}
