@@ -1,6 +1,6 @@
 {
   "name": "jotform-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Wrapper for Embedding JotForm Forms With SSR support (also supports NextJS/Gatsby/CRA)",
   "main": "dist/index.cjs.js",
   "repository": "https://github.com/sbayd/jotform-react.git",
