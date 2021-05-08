@@ -9,6 +9,7 @@ You can use any form fields from JotForm's 300+ field base in your embedded form
 
 It supports multiple forms / auto-resize or submit callbacks.
 ### Installation
+JotForm React Embed package is hosted as open source on [GitHub (jotform-react)](https://github.com/sbayd/jotform-react) and published on [NPM (jotform-react)](https://www.npmjs.com/package/jotform-react)
 
 #### With YARN
 ```
