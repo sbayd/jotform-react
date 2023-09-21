@@ -74,8 +74,7 @@ const YourApp = () => {
 | autoFocus     | true    | No                      | If true, the form will automatically scroll into view as needed. Set to false to disable this behavior.                                                                                                                                        |
 | heightOffset  | 15      | No                      | The number of pixels added to the form's height to prevent browser-specific scroll issues.                                                                                                                                            |
 | initialHeight | 540     | No                      | The initial height (in pixels) of the form.
-                                                                                                                                                                                   |
-| formID        | -       | Required when using multiple forms on the same page. You can find your formID in the Jotform link, which follows the format jotform.com/build/formID (visible in the browser's URL bar). |
+| formID        | -       | Conditional  | Required when using multiple forms on the same page. You can find your formID in the Jotform link, which follows the format jotform.com/build/formID (visible in the browser's URL bar). |
 | onSubmit      | -       | No                      | A callback function to execute when the form submission is successful.                                                                                                                                                               |
 | ...rest       |         | No                      | You can directly set any other prop, such as styles, to the iframe element                                                                                                                                                                                    |
 
