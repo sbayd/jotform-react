@@ -1,22 +1,29 @@
-# JotForm React Embed (jotform-react)
+# Jotform React Embed (jotform-react)
 
-JotForm-React lets you to embed JotForm Forms to your React app. You can use it with all your React-JS projects even with Gatsby / NextJS / Create-React-App projects.
+Jotform-React: Seamlessly Embed Jotform Forms in Your React App
 
-You can create great & flexible forms with [JotForm.com](https://www.jotform.com "JotForm's Homepage")
- and embed them to your website or app in seconds. 
+Easily integrate Jotform Forms into your React projects, including Gatsby, Next.js, and Create-React-App applications.
 
-You can use any form fields from JotForm's 300+ field base in your embedded form even advanced fields like signature, take photo, pdf embed.
+Create versatile and customizable forms with [Jotform.com](https://www.jotform.com "Jotform's Homepage") and effortlessly embed them in your website or app.
 
-It supports multiple forms / auto-resize or submit callbacks.
+Unlock the potential of Jotform's extensive selection of over 300 form fields, including advanced options such as signature, image capture, and PDF embedding.
+
+Benefit from features like support for multiple forms, auto-resizing, and submission callbacks.
+
 ### Installation
-JotForm React Embed package is hosted as open source on [GitHub (jotform-react)](https://github.com/sbayd/jotform-react) and published on [NPM (jotform-react)](https://www.npmjs.com/package/jotform-react)
+Jotform React Embed is available as an open-source project on [GitHub (jotform-react)](https://github.com/sbayd/jotform-react) and can be installed via [NPM (jotform-react)](https://www.npmjs.com/package/jotform-react)
 
-#### With YARN
+### Using Pnpm
+```
+pnpm add jotform-react
+```
+
+#### Using YARN
 ```
 yarn add jotform-react
 ```
 
-#### With NPM
+#### Using NPM
 
 ```
 npm install jotform-react
@@ -28,7 +35,7 @@ import JotFormReact 'jotform-react';
 
 const YourApp = () => {
     return (<div>
-      ...Your App...
+      {/* Your App Content */}
       <JotFormReact
         formURL="https://form.jotform.com/211272589254055"
       />
@@ -46,13 +53,13 @@ const YourApp = () => {
     alert("Form submit succeed!");
   };
   return (<div>
-    ...Your App...
+     {/* Your App Content */}
     <JotFormReact
       formURL="https://form.jotform.com/211272589254055"
-      formID="211272589254055" // Required to use multiple forms in same page.
+      formID="211272589254055" // Required for multiple forms on the same page
       onSubmit={handleSubmit}
-      initialHeight={300} // Form will opens in this size
-      autoResize={true} // should form auto-resize
+      initialHeight={300} // Initial form height
+      autoResize={true} // Enable auto-resizing
     />
   </div>)
 }
@@ -60,21 +67,28 @@ const YourApp = () => {
 
 ### Prop List
 
-| Prop          | Default | isRequired              | Description                                                                                                                                                                                                                                 |
+| Prop          | Default | Required (if applicable)              | Description                                                                                                                                                                                                                                 |
 |---------------|---------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| formURL       | -       | Yes                     | URL For your JotForm Form.  You can get it from JotForm Form Builder's Publish page. Example: https://form.jotform.com/211272589254055                                                                                                      |
-| autoResize    | true    | No                      | If true form will automatically resize if necessary. (ex: multi-page forms) Set to false if you want to close it.                                                                                                                           |
-| autoFocus     | true    | No                      | If true form will automatically scroll into view if necessary. Set to false if you want to close it.                                                                                                                                        |
-| heightOffset  | 15      | No                      | Number of pixels which will be added to form height to prevent browser-specific scroll issues.                                                                                                                                              |
-| initialHeight | 540     | No                      | Number of pixels to specify initial height of the form.                                                                                                                                                                                     |
-| formID        | -       | If using multiple forms | If you are planning to use multiple forms in same page you must set this value. You can learn your formID in your JotForm link. After opening Form Builder, Link Format is: jotform.com/build/formID (you can see it in url bar of browser) |
-| onSubmit      | -       | No                      | Function, if you want to execute a callback when form submission is succeed.                                                                                                                                                                |
-| ...rest       |         | No                      | You can directly set any other prop like style to iframe                                                                                                                                                                                    |
+| formURL       | -       | Yes                     | URL The URL of your Jotform Form, obtainable from Jotform Form Builder's Publish page. Example:  Example: https://form.jotform.com/211272589254055                                                                                                      |
+| autoResize    | true    | No                      | If true, the form will automatically resize as needed (e.g., for multi-page forms). Set to false to disable auto-resizing.                                                                         |
+| autoFocus     | true    | No                      | If true, the form will automatically scroll into view as needed. Set to false to disable this behavior.                                                                                                                                        |
+| heightOffset  | 15      | No                      | The number of pixels added to the form's height to prevent browser-specific scroll issues.                                                                                                                                            |
+| initialHeight | 540     | No                      | The initial height (in pixels) of the form.
+                                                                                                                                                                                   |
+| formID        | -       | Required when using multiple forms on the same page. You can find your formID in the Jotform link, which follows the format jotform.com/build/formID (visible in the browser's URL bar). |
+| onSubmit      | -       | No                      | A callback function to execute when the form submission is successful.                                                                                                                                                               |
+| ...rest       |         | No                      | You can directly set any other prop, such as styles, to the iframe element                                                                                                                                                                                    |
 
 
+## Changelog
 
+### 1.1.0
+
+- Improved build system
+- React moved to peerDependencies to prevent conflicts
+- Transitioned to pnpm from yarn
 ## Contact
 
-Feel free to contact me if you need furhter info.
+For further information or assistance, please feel free to reach out:
 
 Sabri Berkay Aydin - (sbayd06@gmail.com), (berkay@jotform.com)
