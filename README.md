@@ -81,6 +81,10 @@ const YourApp = () => {
 
 ## Changelog
 
+### 1.1.1
+
+- Documentation update
+
 ### 1.1.0
 
 - Improved build system
