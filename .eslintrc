@@ -1,4 +1,15 @@
 {
-  "extends": "jotform",
-  "parser": "babel-eslint"
+  "root": true,
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/babel",
+    "prettier/react",
+    "prettier/unicorn",
+    "adjunct"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ]
 }
